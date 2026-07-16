@@ -1,0 +1,405 @@
+:root{
+    --backLight: #eeeeee;
+    --outLight: #7C8C80;
+    --highLight: #96B979;
+    --textLight: #121d12;
+    --headLight: #F2FFF0;
+
+    --backDark: #070D07;
+    --outDark: #203225;
+    --highDark: #96B979;
+    --textDark: #EBFFF0;
+    --headDark: #070F07;
+
+    --back: #000000;
+    --out: #000000;
+    --high: #000000;
+    --text: #FFFFFF;
+    --head: #000000;
+
+    --footerHight: 120px;
+}
+
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./media/font/Quicksand.ttf') 
+            format('truetype');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+}
+p{
+    font-size: 1.4vw;
+}
+b{
+    font-size: 1.2vw;
+}
+a{
+    font-size: 1.4vw;
+}
+
+
+
+
+body{
+    background-color: var(--back);
+    margin: 0px;
+    position: relative;
+    min-height: calc(100vh - (2 * var(--footerHight)) - 10px);
+}
+*{
+    color: var(--text);
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+header{
+    background-color: var(--head);
+    border-bottom: 1px var(--out) solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+#logoNav{
+    width: 170px;
+    margin: 20px;
+}
+#linksNav{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#linksNav a{
+    text-decoration: none;
+}
+#settingsNav{
+    display: flex;
+    width: 190px;
+    justify-content: flex-end;
+}
+.buttonNav{
+    background-color: var(--head);
+    border-width: 0px;
+    display: flex;
+}
+.buttonNav img, .buttonNav a{
+    width: 15px;
+    height: 15px;
+    border: 1px var(--out) solid;
+    border-radius: 100%;
+    padding: 8px;
+    margin: 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#setEn a, #setDe a{
+    font-size: small;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px var(--out) solid;
+    width: 100%;
+    position: absolute;
+    bottom: calc(var(--footerHight) * -2);
+    height: var(--footerHight);
+}
+footer span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer span *{
+    text-decoration: none;
+    margin: 7px;
+}
+footer p{
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    color: var(--out);
+}
+#copy{
+    font-size: 0.5vw;
+}
+
+
+.content{
+    width: 50%;
+    margin: 0 auto;
+}
+.content b{
+    margin: 0px;
+}
+.content p{
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.content div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.content div span{
+    width: 43%;
+    height: 28vh;
+    margin: 1%;
+    padding: 10px;
+    border: 1px var(--out) solid;
+    background-color: var(--head);
+    border-radius: 5px;
+    display: block;
+}
+.content div span p{
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-break:break-all;
+    word-break:normal;
+    hyphens: auto;
+    text-align: left;
+}
+.content div span h3{
+    margin-top: 2%;
+}
+.content span{
+    padding-left: 2.5%;
+    display: block;
+}
+.leistungEntwicklung{
+    background: url('./media/leistungen/Entwicklung.avif') center center;
+    background-size: 50%;
+}
+.leistungPlanung{
+    background: url('./media/leistungen/Planung.avif') center center;
+    background-size: 50%;
+}
+.leistungErstellung{
+    background: url('./media/leistungen/SocialMedia.avif') center center;
+    background-size: 50%;
+}
+.leistungAnalyse{
+    background: url('./media/leistungen/Analyse.avif') center center;
+    background-size: 50%;
+}
+.leistungSocialMedia{
+    background: url('./media/leistungen/SocialMedia.avif') center center;
+    background-size: 50%;
+}
+.leistungCommunity{
+    background: url('./media/leistungen/Kommunikation.avif') center center;
+    background-size: 50%;
+}
+.leistungKommunikation{
+    background: url('./media/leistungen/Kommunikation.avif') center center;
+    background-size: 25%;
+}
+#leistungKommunikation{
+    width: 91%;
+}
+#imgSpan img{
+    width: 50%;
+    margin-top: 0px;
+}
+#imgSpan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px var(--out) solid;
+    border-radius: 5px;
+    background-color: var(--head);
+}
+#imgSpan p{
+    margin-right: 2.5%;
+    padding-right: 2.5%;
+    border-right: 1px var(--out) solid;
+}
+#logoPage{
+    border-width: 0px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15%;
+    border-radius: 0px;
+    margin-bottom: 15%;
+}
+#linkLeistungen, #linkKontakt{
+    border: 1px var(--out) solid;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    background-color: var(--head);
+    margin-bottom: 20px;
+}
+#linkLeistungen a, #linkKontakt a{
+    position: absolute;
+    right: 20px;
+    bottom: 3px;
+    text-decoration: none;
+}
+#linkLeistungen a img, #linkKontakt a img{
+    width: 150%;
+}
+.linkLeistungen{
+    background:url('./media/index/leistungen.avif') ;
+    background-size: 50%;
+}
+.linkKontakt{
+    background: url('./media/index/kontakt.avif');
+    background-size: 25%;
+}
+
+#kontaktLinks{
+    padding: 0px;
+}
+#kontakt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#kontakt h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#kontaktLinks{
+    width: 40%;
+}
+#kontaktLinks a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 1px var(--out) solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--head);
+    margin-bottom: 20px;
+}
+#kontaktLinks a img{
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+#menu{
+    display: flex;
+    position: sticky;
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--head);
+    top: 82px;
+    border-bottom: 1px var(--out) solid;
+}
+#menu a{
+    margin  : 7px;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+    /*Algemein*/
+    p{
+        font-size: 5vw;
+    }
+    a{
+        font-size: 5vw;
+    }
+    b{
+        font-size: 5vw;
+    }
+
+    /*Header*/
+    #linksNav{
+        display: none;
+    }
+    #sideBarButton{
+        rotate: 90deg;
+        background-color: var(--head);
+        border: 0px;
+        margin-left: 5vw;
+        font-size: 6vw;
+        display: block;
+    }
+    #settingsNav{
+        width: auto;
+    }
+
+    /*Footer*/
+    footer{
+        flex-direction: column;
+        bottom: calc(var(--footerHight) * -1.4);
+    }
+    #copy{
+        position: static;
+        font-size: 2.5vw;
+    }
+
+    /*content*/
+    .content{
+        width: 95%;
+    }
+
+    /*index*/
+    #linkLeistungen{
+        margin-top: 3vh;
+    }
+
+    .content div{
+        align-items: center;
+        flex-direction: column;
+    }
+    .content div span{
+        width: 90%;
+        height: auto;
+        background-size: 25%;
+    }
+
+    /*Kontakt*/
+    #kontaktLinks{
+        width: 60%;
+    }
+    #kontaktLinks a{
+        padding: 10px;
+    }
+    #kontaktLinks a img{
+        width: 12%;
+    }
+
+    /*Über uns*/
+    #imgSpan{
+        flex-direction: column;
+    }
+    #imgSpan p{
+        padding-right: 0px;
+        margin-right: 0px;
+        border-right: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px var(--out) solid;
+    }
+    #imgSpan img{
+        width: 90%;
+    }
+}
+
+
+
+.none{
+    display: none;
+}
+.none#menu{
+    display: none;
+}

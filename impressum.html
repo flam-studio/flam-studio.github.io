@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flam.Studio</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="./scripts/main.js" type="module"></script>
+        <script>
+            window.location.pathname = "/kontakt.html"
+        </script>
+    </head>
+    <body>
+        <header>
+            <bUtton id="sideBarButton" class="none" onclick="ausklappen()">
+                |||
+            </bUtton>
+            <a href="/">
+                <img id="logoNav" src="" alt="Flam.Studio">
+            </a>
+            <span id="linksNav">
+                <a href="./kuenstler.html">Künstler</a>
+                <a href="./leistungen.html">Leistungen</a>
+                <a href="./ueber-uns.html">Über uns</a>
+                <a href="./kontakt.html">Kontakt</a>
+            </span>
+            <span id="settingsNav">
+                <button id="setEn" class="buttonNav">
+                    <a href="">
+                        En
+                    </a>
+                </button>
+                <button id="setMode" class="buttonNav" onclick="setDark()">
+                    <img src="" alt="Change Color Thema" id="modeImg">
+                </button>
+            </span>
+        </header>
+        <main>
+            <div id="menu" class="none">
+                <a href="./kuenstler.html">Künstler</a>
+                <a href="./leistungen.html">Leistungen</a>
+                <a href="./ueber-uns.html">Über uns</a>
+                <a href="./kontakt.html">Kontakt</a>
+            </div>
+        </main>
+        <footer>
+            <span>
+                <h4>
+                    Kontakt
+                </h4>
+                <a href="">
+                    Email
+                </a>
+                <a href="">
+                    Telefon
+                </a>
+            </span>
+            <span>
+                <h4>
+                    Rechtliches
+                </h4>
+                <a href="./impressum.html">
+                    Impressum
+                </a>
+                <a href="./datenschutzerklärung.htm">
+                    Datenschutzerklärung
+                </a>
+            </span>
+            <p id="copy">
+                © 2026 Flam.Studio
+            </p>
+        </footer>
+    </body>
+</html>

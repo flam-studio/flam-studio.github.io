@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flam.Studio</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="./scripts/main.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <bUtton id="sideBarButton" class="none" onclick="ausklappen()">
+                |||
+            </bUtton>
+            <a href="/">
+                <img id="logoNav" src="" alt="Flam.Studio">
+            </a>
+            <span id="linksNav">
+                <a href="./kuenstler.html">Künstler</a>
+                <a href="./leistungen.html">Leistungen</a>
+                <a href="./ueber-uns.html">Über uns</a>
+                <a href="./kontakt.html">Kontakt</a>
+            </span>
+            <span id="settingsNav">
+                <button id="setEn" class="buttonNav">
+                    <a href="">
+                        En
+                    </a>
+                </button>
+                <button id="setMode" class="buttonNav" onclick="setDark()">
+                    <img src="" alt="Change Color Thema" id="modeImg">
+                </button>
+            </span>
+        </header>
+        <main>
+            <div id="menu" class="none">
+                <a href="./kuenstler.html">Künstler</a>
+                <a href="./leistungen.html">Leistungen</a>
+                <a href="./ueber-uns.html">Über uns</a>
+                <a href="./kontakt.html">Kontakt</a>
+            </div>
+            <div class="content" id="kontakt">
+                <h2>
+                    Kontakt
+                </h2>
+                <span id="kontaktLinks">
+                    <a href="mailto:fiona.lengtat@gmx.de">
+                        <img src="" alt="Email" id="imgMail">
+                        fiona.lengtat@gmx.de
+                    </a>
+                    <a href="https://www.instagram.com/flam.studio.de" target="_blank">
+                        <img src="" alt="Instagram" id="imgInstagram">
+                        @flam.studio.de
+                    </a>
+                    <a href="https://www.tiktok.com/@flam.studio" target="_blank">
+                        <img src="" alt="Tiktok" id="imgTiktok">
+                        @flam.studio
+                    </a>
+                </span>
+            </div>
+        </main>
+        <footer>
+            <span>
+                <h4>
+                    Kontakt
+                </h4>
+                <a href="">
+                    Email
+                </a>
+                <a href="">
+                    Telefon
+                </a>
+            </span>
+            <span>
+                <h4>
+                    Rechtliches
+                </h4>
+                <a href="./impressum.html">
+                    Impressum
+                </a>
+                <a href="./datenschutzerklärung.htm">
+                    Datenschutzerklärung
+                </a>
+            </span>
+            <p id="copy">
+                © 2026 Flam.Studio
+            </p>
+        </footer>
+    </body>
+</html>
