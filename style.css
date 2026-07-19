@@ -127,7 +127,7 @@ footer p{
     color: var(--out);
 }
 #copy{
-    font-size: 0.5vw;
+    font-size: 1vw;
 }
 
 
@@ -138,11 +138,11 @@ footer p{
 .content b{
     margin: 0px;
 }
-.content p{
+.content>p{
     margin-bottom: 10px;
     margin-top: 0px;
 }
-.content div{
+.content>div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -307,7 +307,199 @@ footer p{
 }
 
 
+/*kuenstler*/
+.kuenstler{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.kuenstler h2{
+    margin-bottom: 0px;
+}
+.kuenstler>p{
+    margin-bottom: 3vh;
+}
+.kuenstler > img{
+    border: 2px var(--out) solid;
+    border-radius: 50%;
+    width: 40%;
+    margin-top: 30px;
+}
+.kuenstler #kontaktLinks{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+.kuenstler #kontaktLinks a{
+    border: 1px var(--out) solid;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 0.4vw;
+    margin-top: 0px;
+}
+.kuenstler #kontaktLinks a img{
+    width: 3vw;
+    margin-bottom: 0pc;
+} 
 
+/*werdegang*/
+@keyframes erscheinen {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.werdegang{
+    display: block;
+    margin-top: 20px;
+}
+.werdegang *, .werdegang ::before, .werdegang ::after{
+  box-sizing: border-box;
+}
+.werdegang p{
+  margin-top: 0px;
+}
+.werdegangLinie {
+  position: relative;
+}
+.werdegangLinie::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  border: 1px dashed var(--out);
+  background-color: none;
+  top: 0;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -4px;
+}
+.werdegangAbschnitt {
+  position: relative;
+  width: 50%;
+}
+.werdegangAbschnitt::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 3px solid var(--high);
+  outline: 1px solid var(--out);
+  right: -8px;
+  background-color: var(--high);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.links {
+  padding: 10px 40px 20px 0px;
+  left: 0;
+}
+.rechts {
+  padding: 10px 0px 20px 40px;
+  left: 50%;
+}
+.links::before, .rechts::before{
+  scale: 0;
+  opacity: 0;
+  animation: erscheinen linear forwards;
+  animation-timeline: view();
+  animation-range: 200px 350px;
+}
+.links::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  border: medium solid var(--out);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--out);
+}
+.rechts::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  border: medium solid var(--out);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--out) transparent transparent;
+}
+.rechts::after {
+  left: -14px;
+}
+.werdegangPunkt {
+  scale: 0;
+  opacity: 0;
+  border: 1px var(--out) solid;
+  box-shadow: 0px 2px 12px 2px var(--out);
+  overflow: hidden;
+  animation: erscheinen linear forwards;
+  animation-timeline: view();
+  animation-range: 200px 350px;
+}
+.werdegangBild {
+  width: 100%;
+  height: 200px;
+}
+#werdegangBild1 {
+  background: url("./media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#werdegangBild2 {
+  background: url("./media/kuentler/defaultBild.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+#werdegangBild3 {
+  background: url("./media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#werdegangBild4 {
+  background: url("./media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+.klappeoeffner{
+  margin-bottom: 0;
+}
+.klappeKnopf{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 0;
+  font-size: 18px;
+  background-color: var(--head);
+  justify-content: center;
+  line-height: inherit;
+}
+.klappeKnopf:not(.geschlossen) {
+  background-color: var(--high);
+  color: var(--text);
+}
+.klappeKnopf:after {
+  margin: 0;
+  margin-left: 15px;
+}
+.klappeKnopf:not(.collapsed):after {
+  filter: invert(100%) brightness(200%);
+}
+.imgKlappe{
+    width: 1vw;
+    margin-left: 10px;
+}
+.klappeInhalt{
+  max-height: 0px;
+  transition: max-height 0.4s linear;
+}
+.klappeInhalt.offen{
+  max-height: 100vh
+}
+.klappeText{
+  padding: .5rem;
+}
 
 @media screen and (max-width: 800px){
     /*Algemein*/
@@ -351,20 +543,19 @@ footer p{
     .content{
         width: 95%;
     }
+    .content>div{
+        align-items: center;
+        flex-direction: column;
+    }
+    .content>div span{
+        width: 90%;
+        height: auto;
+        background-size: 25%;
+    }
 
     /*index*/
     #linkLeistungen{
         margin-top: 3vh;
-    }
-
-    .content div{
-        align-items: center;
-        flex-direction: column;
-    }
-    .content div span{
-        width: 90%;
-        height: auto;
-        background-size: 25%;
     }
 
     /*Kontakt*/
@@ -392,6 +583,34 @@ footer p{
     }
     #imgSpan img{
         width: 90%;
+    }
+
+    /*werdegang*/
+    .werdegangLinie::after {
+        left: 10px;
+    }
+    .werdegangAbschnitt {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 25px;
+    }
+    .werdegangAbschnitt::before {
+        left: 30px;
+        border: medium solid var(--out);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--out) transparent transparent;
+    }
+    .links::after, .rechts::after {
+        left: -4px;
+    }
+    .links::before {
+        right: auto;
+    }
+    .rechts {
+        left: 0%;
+    }
+    .werdegangPunkt {
+        transform-origin: 0% 0%;
     }
 }
 

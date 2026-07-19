@@ -1,4 +1,5 @@
 import { setStorage } from "./localStorage.js"
+import { setKlappenImg } from "./werdegang.js"
 
 const r = document.querySelector(':root')
 const rs = getComputedStyle(r)
@@ -40,9 +41,11 @@ const imgMail = document.getElementById("imgMail")
 const imgInstagram = document.getElementById("imgInstagram")
 const imgTiktok = document.getElementById("imgTiktok")
 
+export var mode;
 
 export function setLight(){
     setStorage("mode", "light")
+    mode = "Light"
 
     r.style.setProperty('--back', backLight)
     r.style.setProperty('--out', outLight)
@@ -79,10 +82,17 @@ export function setLight(){
         imgInstagram.src = './media/instagramLight.svg'
         imgTiktok.src = './media/tiktokLight.svg'
     }catch{}
+    try{
+        setKlappenImg(1)
+        setKlappenImg(2)
+        setKlappenImg(3)
+        setKlappenImg(4)
+    }catch{}
 }
 
 export function setDark(){
     setStorage("mode", "dark")
+    mode = "Dark"
 
 
     r.style.setProperty('--back', backDark)
@@ -119,5 +129,11 @@ export function setDark(){
         imgMail.src = './media/mailDark.svg'
         imgInstagram.src = './media/instagramDark.svg'
         imgTiktok.src = './media/tiktokDark.svg'
+    }catch{}
+    try{
+        setKlappenImg(1)
+        setKlappenImg(2)
+        setKlappenImg(3)
+        setKlappenImg(4)
     }catch{}
 }
