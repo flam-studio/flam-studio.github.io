@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flam.Studio</title>
+        <link href="../../style.css" rel="stylesheet">
+        <script src="../../scripts/main.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <bUtton id="sideBarButton" class="none" onclick="ausklappen()">
+                |||
+            </bUtton>
+            <a href="../../en.html">
+                <img id="logoNav" src="" alt="Flam.Studio">
+            </a>
+            <span id="linksNav">
+                <a href="../artists.html">Artists</a>
+                <a href="../services.html">Services</a>
+                <a href="../about-us.html">About Us</a>
+                <a href="../contact.html">Contact</a>
+            </span>
+            <span id="settingsNav">
+                <button id="setDe" class="buttonNav">
+                    <a href="../../kuenstler/defaultartist.html">
+                        De
+                    </a>
+                </button>
+                <button id="setMode" class="buttonNav" onclick="setDark()">
+                    <img src="" alt="Change Color Thema" id="modeImg">
+                </button>
+            </span>
+        </header>
+        <main>
+            <div id="menu" class="none">
+                <a href="../artists.html">Artists</a>
+                <a href="../services.html">Services</a>
+                <a href="../about-us.html">About Us</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+            <div class="content kuenstler">
+                <img src="../media/kuentler/defaultArtist_Profilbild.jpg" alt="">
+                <h2>
+                    Your name could be here
+                </h2>
+                <p>
+                    Artist
+                </p>
+                <span id="kontaktLinks">
+                    <a href="mailto:kontakt@flam-studio.de">
+                        <img src="" alt="Email" id="imgMail">
+                    </a>
+                    <a href="https://www.instagram.com/flam.studio.de" target="_blank">
+                        <img src="" alt="Instagram" id="imgInstagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@flam.studio" target="_blank">
+                        <img src="" alt="Tiktok" id="imgTiktok">
+                    </a>
+                </span>
+                <p>
+                    Here's where I can write a lot about myself. For example, what I do or what makes me special. So, basically, “Your text could go here.”
+                </p>
+                <h2>
+                    Career History
+                </h2>
+                <div class="werdegang">
+                    <div class="werdegangLinie">
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="werdegangBild1"></div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf1" onclick="clickKlappe1()">
+                                    First Point
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe1">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt1" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        A lot of text about the first thing I want to write here—so I can tell you about everything I've already done
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt rechts">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="werdegangBild2"></div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf2" onclick="clickKlappe2()">
+                                    Second Point
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe2">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt2" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        A lot of text about the second thing I want to write about here, so I can tell you about everything I've already done
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="werdegangBild3"></div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf3" onclick="clickKlappe3()">
+                                    Third Point
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe3">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt3" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        A lot of text about the third thing I want to write about here, so I can tell you about everything I've already done
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt rechts">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="werdegangBild4"></div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf4" onclick="clickKlappe4()">
+                                    Fourth Point
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe4">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt4" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        A lot of text about the fourth thing I want to write about here, so I can tell you about everything I've already done
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>
+                    Press Articles
+                </h3>
+                <h3>
+                    Photos from the Community
+                </h3>
+                <h3>
+                    Press Photos
+                </h3>
+            </div>
+        </main>
+        <footer>
+            <span>
+                <h4>
+                    Contact
+                </h4>
+                <a href="mailto:kontakt@flam-studio.de">
+                    Email:
+                </a>
+                <a href="mailto:kontakt@flam-studio.de">
+                    kontakt@flam-studio.de
+                </a>
+            </span>
+            <span>
+                <h4>
+                    Legal Information
+                </h4>
+                <a href="../legal-notice.html">
+                    Legal Notice
+                </a>
+                <a href="../privacy-policy.html">
+                    Privacy Policy
+                </a>
+            </span>
+            <p id="copy">
+                © 2026 Flam.Studio
+            </p>
+        </footer>
+    </body>
+</html>
