@@ -1,7 +1,7 @@
 import { handleEntry } from "./entryPage.js";
 import { setDark, setLight } from "./mode.js";
 import { ausklappen, einklappen } from "./menu.js";
-import { clickKlappe1, clickKlappe2, clickKlappe3, clickKlappe4 } from "./werdegang.js";
+import { clickKlappe1, clickKlappe2, clickKlappe3, clickKlappe4, clickScrollCommunity, clickScrollPresse } from "./kuenstler.js";
 
 window.setDark = setDark
 window.setLight = setLight
@@ -11,5 +11,7 @@ window.clickKlappe1 = clickKlappe1
 window.clickKlappe2 = clickKlappe2
 window.clickKlappe3 = clickKlappe3
 window.clickKlappe4 = clickKlappe4
+window.clickScrollCommunity = clickScrollCommunity
+window.clickScrollPresse = clickScrollPresse
 
 handleEntry()

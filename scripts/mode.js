@@ -1,5 +1,5 @@
 import { setStorage } from "./localStorage.js"
-import { setKlappenImg } from "./werdegang.js"
+import { setKlappenImg } from "./kuenstler.js"
 
 const r = document.querySelector(':root')
 const rs = getComputedStyle(r)
@@ -87,6 +87,8 @@ export function setLight(){
         setKlappenImg(2)
         setKlappenImg(3)
         setKlappenImg(4)
+        setKlappenImg(5)
+        setKlappenImg(6)
     }catch{}
 }
 
@@ -135,5 +137,7 @@ export function setDark(){
         setKlappenImg(2)
         setKlappenImg(3)
         setKlappenImg(4)
+        setKlappenImg(5)
+        setKlappenImg(6)
     }catch{}
 }
