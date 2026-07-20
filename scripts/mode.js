@@ -53,10 +53,10 @@ export function setLight(){
     r.style.setProperty('--text', textLight)
     r.style.setProperty('--head', headLight)
 
-    logoNav.src = './media/LogoLight.svg'
+    logoNav.src = '../media/LogoLight.svg'
 
     setMode.setAttribute('onclick', "setDark()")
-    modeImg.src = './media/darkmode.svg'
+    modeImg.src = '../media/darkmode.svg'
 
     try{
         leistungEntwicklung.classList.add('leistungEntwicklung')
@@ -68,19 +68,19 @@ export function setLight(){
         leistungKommunikation.classList.add('leistungKommunikation')
     }catch{}
     try{
-        logoPage.src = './media/LogoLight.svg'
+        logoPage.src = '../media/LogoLight.svg'
         linkLeistungen.classList.add('linkLeistungen')
         linkKontakt.classList.add('linkKontakt')
-        arrowLeistungen.src = './media/arrowLight.svg'
-        arrowKontakt.src = './media/arrowLight.svg'
+        arrowLeistungen.src = '../media/arrowLight.svg'
+        arrowKontakt.src = '../media/arrowLight.svg'
     }catch{}
     try{
         exampleUeberUns.src = './media/ueberUns/FanpageLight.jpg'
     }catch{}
     try{
-        imgMail.src = './media/mailLight.svg'
-        imgInstagram.src = './media/instagramLight.svg'
-        imgTiktok.src = './media/tiktokLight.svg'
+        imgMail.src = '../media/mailLight.svg'
+        imgInstagram.src = '../media/instagramLight.svg'
+        imgTiktok.src = '../media/tiktokLight.svg'
     }catch{}
     try{
         setKlappenImg(1)
@@ -103,10 +103,10 @@ export function setDark(){
     r.style.setProperty('--text', textDark)
     r.style.setProperty('--head', headDark)
 
-    logoNav.src = './media/LogoDark.svg'
+    logoNav.src = '../media/LogoDark.svg'
 
     setMode.setAttribute('onclick', "setLight()")
-    modeImg.src = './media/lightmode.svg'
+    modeImg.src = '../media/lightmode.svg'
 
     try{
         leistungEntwicklung.classList.remove('leistungEntwicklung')
@@ -118,19 +118,19 @@ export function setDark(){
         leistungKommunikation.classList.remove('leistungKommunikation')
     }catch{}
         try{
-        logoPage.src = './media/LogoDark.svg'
+        logoPage.src = '../media/LogoDark.svg'
         linkLeistungen.classList.remove('linkLeistungen')
         linkKontakt.classList.remove('linkKontakt')
-        arrowLeistungen.src = './media/arrowDark.svg'
-        arrowKontakt.src = './media/arrowDark.svg'
+        arrowLeistungen.src = '../media/arrowDark.svg'
+        arrowKontakt.src = '../media/arrowDark.svg'
     }catch{}
         try{
         exampleUeberUns.src = './media/ueberUns/FanpageDark.jpg'
     }catch{}
     try{
-        imgMail.src = './media/mailDark.svg'
-        imgInstagram.src = './media/instagramDark.svg'
-        imgTiktok.src = './media/tiktokDark.svg'
+        imgMail.src = '../media/mailDark.svg'
+        imgInstagram.src = '../media/instagramDark.svg'
+        imgTiktok.src = '../media/tiktokDark.svg'
     }catch{}
     try{
         setKlappenImg(1)
