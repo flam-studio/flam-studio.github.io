@@ -342,6 +342,42 @@ footer p{
     margin-bottom: 0pc;
 } 
 
+/*Img Scroller*/
+#imgBox{
+    display: block;
+    text-align: center;
+}
+#imgBox button h2{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+#imgBox button img{
+    width: 15px;
+}
+.scrollBoxKnopf{
+    border: 0px;
+    cursor: pointer;
+    width: 60%;
+    background-color: var(--back);
+}
+.scrollBoxKnopf.geschlossen + .scrollBox{
+    display: none;
+}
+.scrollBox {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  padding-top: 5px;
+  display: block;
+}
+
+.scrollBox img {
+  margin: 10px;
+  max-width: 600px;
+  max-height: 400px;
+  border: 2px var(--out) solid;
+}
+
 /*werdegang*/
 @keyframes erscheinen {
   to {
@@ -487,7 +523,7 @@ footer p{
   filter: invert(100%) brightness(200%);
 }
 .imgKlappe{
-    width: 1vw;
+    width: 15px;
     margin-left: 10px;
 }
 .klappeInhalt{
