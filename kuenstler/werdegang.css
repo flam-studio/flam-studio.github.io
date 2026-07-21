@@ -1,0 +1,46 @@
+/*Default Artis*/
+#defaultWerdegangBild1 {
+  background: url("../media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#defaultWerdegangBild2 {
+  background: url("../media/kuentler/defaultBild.jpg") 25% 25% no-repeat;
+  background-size: cover;
+}
+#defaultWerdegangBild3 {
+  background: url("../media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#defaultWerdegangBild4 {
+  background: url("../media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+
+/*Fabian Ziems*/
+#FabianZiemsWerdegangBild0 {
+  background: url("../media/kuentler/Fabian-Ziems/film-bild.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#FabianZiemsWerdegangBild1 {
+  background: url("../media/kuentler/Fabian-Ziems/theater-bild.avif") 25% 25% no-repeat;
+  background-size: cover;
+}
+#FabianZiemsWerdegangBild2 {
+  background: url("../media/kuentler/Fabian-Ziems/joy-of-voice-bild.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#FabianZiemsWerdegangBild3 {
+  background: url("../media/kuentler/Fabian-Ziems/tvk-bild.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#FabianZiemsWerdegangBild4 {
+  background: url("../media/kuentler/Fabian-Ziems/alles-anders-bild.jpeg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
