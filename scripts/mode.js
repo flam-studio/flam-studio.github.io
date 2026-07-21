@@ -44,7 +44,7 @@ const imgYoutube = document.getElementById("imgYoutube")
 
 const musikPlay = []
 for(let i = 0; i < 99; i++){
-    document.getElementById(`musikPlay${i}`)
+    musikPlay.push(document.getElementById(`musikPlay${i}`))
 }
 
 export var mode;
