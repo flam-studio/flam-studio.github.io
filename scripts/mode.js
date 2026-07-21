@@ -40,6 +40,12 @@ const exampleUeberUns = document.getElementById("exampleUeberUns")
 const imgMail = document.getElementById("imgMail")
 const imgInstagram = document.getElementById("imgInstagram")
 const imgTiktok = document.getElementById("imgTiktok")
+const imgYoutube = document.getElementById("imgYoutube")
+
+const musikPlay = []
+for(let i = 0; i < 99; i++){
+    document.getElementById(`musikPlay${i}`)
+}
 
 export var mode;
 
@@ -57,7 +63,8 @@ export function setLight(){
 
     setMode.setAttribute('onclick', "setDark()")
     modeImg.src = '../media/darkmode.svg'
-
+    
+    //leistungen
     try{
         leistungEntwicklung.classList.add('leistungEntwicklung')
         leistungPlanung.classList.add('leistungPlanung')
@@ -67,29 +74,14 @@ export function setLight(){
         leistungCommunity.classList.add('leistungCommunity')
         leistungKommunikation.classList.add('leistungKommunikation')
     }catch{}
+
+    //index
     try{
-        logoPage.src = '../media/LogoLight.svg'
         linkLeistungen.classList.add('linkLeistungen')
         linkKontakt.classList.add('linkKontakt')
-        arrowLeistungen.src = '../media/arrowLight.svg'
-        arrowKontakt.src = '../media/arrowLight.svg'
     }catch{}
-    try{
-        exampleUeberUns.src = './media/ueberUns/FanpageLight.jpg'
-    }catch{}
-    try{
-        imgMail.src = '../media/mailLight.svg'
-        imgInstagram.src = '../media/instagramLight.svg'
-        imgTiktok.src = '../media/tiktokLight.svg'
-    }catch{}
-    try{
-        setKlappenImg(1)
-        setKlappenImg(2)
-        setKlappenImg(3)
-        setKlappenImg(4)
-        setKlappenImg(5)
-        setKlappenImg(6)
-    }catch{}
+
+    handleMode()
 }
 
 export function setDark(){
@@ -108,6 +100,7 @@ export function setDark(){
     setMode.setAttribute('onclick', "setLight()")
     modeImg.src = '../media/lightmode.svg'
 
+    //leistungen
     try{
         leistungEntwicklung.classList.remove('leistungEntwicklung')
         leistungPlanung.classList.remove('leistungPlanung')
@@ -117,27 +110,54 @@ export function setDark(){
         leistungCommunity.classList.remove('leistungCommunity')
         leistungKommunikation.classList.remove('leistungKommunikation')
     }catch{}
-        try{
-        logoPage.src = '../media/LogoDark.svg'
+
+    //index
+    try{
         linkLeistungen.classList.remove('linkLeistungen')
         linkKontakt.classList.remove('linkKontakt')
-        arrowLeistungen.src = '../media/arrowDark.svg'
-        arrowKontakt.src = '../media/arrowDark.svg'
     }catch{}
-        try{
-        exampleUeberUns.src = './media/ueberUns/FanpageDark.jpg'
-    }catch{}
+
+    handleMode()
+}
+
+function handleMode(){
+    //index
     try{
-        imgMail.src = '../media/mailDark.svg'
-        imgInstagram.src = '../media/instagramDark.svg'
-        imgTiktok.src = '../media/tiktokDark.svg'
+        logoPage.src = `../media/Logo${mode}.svg`
+        arrowLeistungen.src = `../media/arrow${mode}.svg`
+        arrowKontakt.src = `../media/arrow${mode}.svg`
     }catch{}
+
+    //ueber uns
     try{
-        setKlappenImg(1)
-        setKlappenImg(2)
-        setKlappenImg(3)
-        setKlappenImg(4)
-        setKlappenImg(5)
-        setKlappenImg(6)
+        exampleUeberUns.src = `./media/ueberUns/Fanpage${mode}.jpg`
+    }catch{}
+
+    //kontakt || kuenstler/...
+    try{
+        imgMail.src = `../media/mail${mode}.svg`
+        imgInstagram.src = `../media/instagram${mode}.svg`
+        imgTiktok.src = `../media/tiktok${mode}.svg`
+        imgYoutube.src = `../media/youtube${mode}.svg`
+    }catch{}
+
+    //kuenstler Songs
+    try{
+        for(let i = 0; i < 99; i++){
+            musikPlay[i].src = `../media/kuentler/play${mode}.svg`
+        }
+    }catch{}
+
+    //kuenstler imgBox
+    try{
+        setKlappenImg(99)
+        setKlappenImg(100)
+    }catch{}
+
+    //kuenstler werdegang
+    try{
+        for(let i = 0; i < 99; i++){
+            setKlappenImg(i)
+        }
     }catch{}
 }
