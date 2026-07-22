@@ -345,7 +345,7 @@ footer p{
 } 
 
 /*Content Scroller*/
-.contentScrollBox{
+.content .contentScrollBox{
     overflow: auto;
     white-space: nowrap;
     padding-top: 5px;
@@ -369,7 +369,7 @@ footer p{
     text-align: center;
     background-color: var(--head);
 }
-.contentScrollBox#datum > a{
+.contentScrollBox.datum > a{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

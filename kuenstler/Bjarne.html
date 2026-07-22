@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="lu1710">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../media/logo.jpeg">
+        <title>Flam.Studio</title>
+        <link href="../style.css" rel="stylesheet">
+        <link rel="stylesheet" href="./werdegang.css">
+        <script src="../scripts/main.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <bUtton id="sideBarButton" class="none" onclick="ausklappen()">
+                |||
+            </bUtton>
+            <a href="/">
+                <img id="logoNav" src="" alt="Flam.Studio">
+            </a>
+            <span id="linksNav">
+                <a href="../kuenstler.html">Künstler</a>
+                <a href="../leistungen.html">Leistungen</a>
+                <a href="../ueber-uns.html">Über uns</a>
+                <a href="../kontakt.html">Kontakt</a>
+            </span>
+            <span id="settingsNav">
+                <button id="setEn" class="buttonNav">
+                    <a href="../en/artists/defaultartist.html">
+                        En
+                    </a>
+                </button>
+                <button id="setMode" class="buttonNav" onclick="setDark()">
+                    <img src="" alt="Change Color Thema" id="modeImg">
+                </button>
+            </span>
+        </header>
+        <main>
+            <div id="menu" class="none">
+                <a href="../kuenstler.html">Künstler</a>
+                <a href="../leistungen.html">Leistungen</a>
+                <a href="../ueber-uns.html">Über uns</a>
+                <a href="../kontakt.html">Kontakt</a>
+            </div>
+            <div class="content kuenstler">
+                <img src="../media/kuentler/Bjarne/profilbild.jpg" alt="">
+                <h2>
+                    Bjarne
+                </h2>
+                <p>
+                    Sänger
+                </p>
+                <span id="kontaktLinks">
+                    <a href="mailto:bjarne@flam-studio.de">
+                        <img src="" alt="Email" id="imgMail">
+                    </a>
+                    <a href="https://www.instagram.com/bjarne.w.official/" target="_blank">
+                        <img src="" alt="Instagram" id="imgInstagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@bjarne_official" target="_blank">
+                        <img src="" alt="Tiktok" id="imgTiktok">
+                    </a>
+                    <a href="https://www.youtube.com/@bjarne.official" target="_blank">
+                        <img src="" alt="Youtube" id="imgYoutube">
+                    </a>
+                    <a href="https://www.facebook.com/bjarne.w.official" target="_blank">
+                        <img src="" alt="Facebook" id="imgFacebook">
+                    </a>
+                </span>
+                <p>
+                    Musik ist meine Leidenschaft und die Bühne mein Zuhause. Mit den Auftritten bei The Voice Kids 2024 und dem Junior Eurovision Song Contest 2024, sowie bei Ein Herz Für Kinder durfte ich unvergessene Erinnerungen sammeln. Zu meinen bisherigen Projekten gehören auch mein erster eigener Song und meine erste eigene EP.
+                </p>
+                <h2>
+                    Auftritte
+                </h2>
+                <div class="contentScrollBox datum" id="bjarneDatumBox">
+
+                </div>
+                <h2>
+                    Songs/EPs
+                </h2>
+                <div class="contentScrollBox">
+                    <a href="https://open.spotify.com/intl-de/track/1keafAMZSvWSQMr6rcuqc2" target="_blank">
+                        <img src="" alt="Play" id="musikPlay0">
+                        Someone You Loved (Blinds)
+                    </a>
+                    <a href="https://open.spotify.com/intl-de/track/7AIilm8Z3rgtCJ4ijfnI6X" target="_blank">
+                        <img src="" alt="Play" id="musikPlay1">
+                        Viva La Vida
+                    </a>
+                    <a href="https://open.spotify.com/intl-de/track/1keafAMZSvWSQMr6rcuqc2" target="_blank">
+                        <img src="" alt="Play" id="musikPlay2">
+                        Someone You Loved (Sing Offs)
+                    </a>
+                    <a href="https://open.spotify.com/intl-de/track/7Dy1fC0nNAYNriQYWuMqsl" target="_blank">
+                        <img src="" alt="Play" id="musikPlay3">
+                        Save the Best for Us
+                    </a>
+                    <a href="https://open.spotify.com/intl-de/album/1pXVmnnuGicV45FnloOirc" target="_blank">
+                        <img src="" alt="Play" id="musikPlay4">
+                        Tears of Joy (EP)
+                    </a>
+                </div>
+                <h2>
+                    Werdegang
+                </h2>
+                <div class="werdegang">
+                    <div class="werdegangLinie">
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="BjarneWerdegangBild0">
+                                <p>
+                                    Foto: Sat.1 / Claudius Pflug
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf0" onclick="clickKlappe(0)">
+                                    The Voice Kids
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe0">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt0" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Bjarne trat erstmals als Sänger im Fernsehen auf, als er im Jahr 2024 an der 12. Staffel der deutschen Gesangs-Carstingshow „The Voice Kids“ teilnahm. Bjarnes Auftritt in den Blind Audition, wo er den Song „Someone You Loved“ von Lewis Capaldi sang, ging auf allen Social Media Plattformen viral. Bei The Voice Kids kam Bjarne von den Blind Auditions, durch die Battles bis in die Sing-Offs. 
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt rechts">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="BjarneWerdegangBild1"></div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf1" onclick="clickKlappe(1)">
+                                    Debut-Single
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe1">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt1" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Am 27.09.2024 erschien Bjarnes erster eigener Song „Save the Best for Us“ auf allen gängigen Streaming-Plattformen.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="BjarneWerdegangBild2">
+                                <p>
+                                    Foto: junioreurovision
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf2" onclick="clickKlappe(2)">
+                                    JESC
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe2">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt2" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Im November 2024 durfte Bjarne Deutschland mit seinem Song „Save the Best for Us“ beim Junior Eurovision Song Contest in Madrid Vertreten.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt rechts">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="BjarneWerdegangBild3">
+                                <p>
+                                    Fotos: Fredrik von Erichsen / BILD
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf3" onclick="clickKlappe(3)">
+                                    Ein Herz für Kinder
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe3">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt3" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Am 6.12.2024 war Bjarne bei der Spendengala „Ein Herz Für Kinder“ zu Gast. Dort sang er gemeinsam mit der Schlager-Sängerin Andrea Berg im Duett den Song „Der keine Trommler“.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="BjarneWerdegangBild4"></div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf4" onclick="clickKlappe(4)">
+                                    Debut-EP
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe4">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt4" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Am 14.11.2025 erschien Bjarnes erste EP mit den (Cover-)Songs „Take Me to Church“, „Another Love“, „Set Fire to the Rain“, „River“, sowie „Bird Set Free“ und „People Help the People“
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt rechts">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="BjarneWerdegangBild5">
+                                <p>
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf5" onclick="clickKlappe(5)">
+                                    Tonies
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe5">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt5" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Im Dezember sprach und sang Bjarne bei Tonies für die Rolle Harrison aus „Die Legende des singenden Bergs“ ein.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="BjarneWerdegangBild6"></div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf6" onclick="clickKlappe(6)">
+                                    Lucas Traumfabrik
+                                    <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe6">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt6" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Bjarne durfte bei den Testdreharbeiten zu „Lucas Traumfabrik“ die Rolle von Samuel spielen. Lucas Traumfabrik erzählt die Geschichte der 12-Jährigen Luca, die nach dem Verlust ihrer Eltern in Schrozberg ankommt und ein lokales Kino retten will - eine Geschichte über Familie, Fantasie und die kraft des Kinos
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>
+                    Für Autogrammanfragen:
+                </h3>
+                <p>
+                    Schicke bitte einen Umschlag mit einem frankierten Rückumschlag und deinen Autogramm Wünschen an folgende Adresse: <br>
+                    <br>
+                    Bjarne <br>
+                    Postfach 13 <br>
+                    49453 Rehden
+                </p>
+                <h2>
+                    Presseartikel
+                </h2>
+                <div class="contentScrollBox">
+                    <a href="https://www.eurovision.de/news/Deutschlands-JESC-Kandidat-Bjarne-im-Portraet,deutschland2152.html" target="_blank">
+                        Eurovision
+                    </a>
+                    <a href="https://www.kreiszeitung.de/lokales/diepholz/rehden-ort48541/kinderstar-bjarne-geht-neue-wege-hauptrolle-in-aussicht-94381593.html" target="_blank">
+                        Kreiszeitung.de
+                    </a>
+                </div>
+            </div>
+            <div id="imgBox">
+                <button id="scrollBoxKnopfCommunity" class="scrollBoxKnopf geschlossen" onclick="clickScrollCommunity()">
+                    <h2>
+                        Fotos aus der Community
+                    </h2>
+                    <img src="" alt="ein-/ausklappen" id="scrollBoxImgCommunity" onclick="">
+                </button>
+                <div class="scrollBox" id="scrollBoxCommunity">
+                    <img src="../media/kuentler/defaultBild.jpg" alt="Cinque Terre">
+                    <img src="../media/kuentler/defaultBild.jpg" alt="Forest">
+                    <img src="../media/kuentler/defaultArtist_Profilbild.jpg" alt="Northern Lights">
+                    <img src="../media/kuentler/defaultBild.jpg" alt="Mountains">
+                </div>
+                <button id="scrollBoxKnopfPresse" class="scrollBoxKnopf geschlossen" onclick="clickScrollPresse()">
+                    <h2>
+                        Pressebilder
+                    </h2>
+                    <img src="" alt="ein-/ausklappen" id="scrollBoxImgPresse">
+                </button>
+                <div class="scrollBox" id="scrollBoxPresse">
+                    <img src="../media/kuentler/Bjarne/profilbild.jpg" alt="">
+                    <img src="../media/kuentler/Bjarne/save-the-best-for-us-bild.jpg" alt="">
+                    <img src="../media/kuentler/Bjarne/autogramm-bild.jpg" alt="">
+                    <img src="../media/kuentler/Bjarne/Pressebild1.jpg" alt="">
+                    <img src="../media/kuentler/Bjarne/Pressebild2.jpg" alt="">
+                    <img src="../media/kuentler/Bjarne/Pressebild3.jpeg" alt="">
+                    <img src="../media/kuentler/Bjarne/Pressebild4.jpeg" alt="">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span>
+                <h4>
+                    Kontakt
+                </h4>
+                <a href="mailto:kontakt@flam-studio.de">
+                    Email:
+                </a>
+                <a href="mailto:kontakt@flam-studio.de">
+                    kontakt@flam-studio.de
+                </a>
+            </span>
+            <span>
+                <h4>
+                    Rechtliches
+                </h4>
+                <a href="../impressum.html">
+                    Impressum
+                </a>
+                <a href="../datenschutzerklärung.htm">
+                    Datenschutzerklärung
+                </a>
+            </span>
+            <p id="copy">
+                © 2026 Flam.Studio
+            </p>
+        </footer>
+    </body>
+</html>

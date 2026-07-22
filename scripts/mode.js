@@ -41,10 +41,15 @@ const imgMail = document.getElementById("imgMail")
 const imgInstagram = document.getElementById("imgInstagram")
 const imgTiktok = document.getElementById("imgTiktok")
 const imgYoutube = document.getElementById("imgYoutube")
+const imgFacebook = document.getElementById("imgFacebook")
 
 const musikPlay = []
 for(let i = 0; i < 99; i++){
     musikPlay.push(document.getElementById(`musikPlay${i}`))
+    if(musikPlay[i] == null){
+        musikPlay.pop()
+        break
+    }
 }
 
 export var mode;
@@ -136,14 +141,23 @@ function handleMode(){
     //kontakt || kuenstler/...
     try{
         imgMail.src = `../media/mail${mode}.svg`
+    }catch{}
+    try{
         imgInstagram.src = `../media/instagram${mode}.svg`
+    }catch{}
+    try{
         imgTiktok.src = `../media/tiktok${mode}.svg`
+    }catch{}
+    try{
         imgYoutube.src = `../media/youtube${mode}.svg`
+    }catch{}
+    try{
+        imgFacebook.src = `../media/facebook${mode}.svg`
     }catch{}
 
     //kuenstler Songs
     try{
-        for(let i = 0; i < 99; i++){
+        for(let i = 0; i < musikPlay.length; i++){
             musikPlay[i].src = `../media/kuentler/play${mode}.svg`
         }
     }catch{}

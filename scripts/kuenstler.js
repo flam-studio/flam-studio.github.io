@@ -3,20 +3,32 @@ import { mode } from "./mode.js"
 const klappeKnoepf = []
 for(let i = 0; i < 99; i++){
     klappeKnoepf.push(document.getElementById(`klappeKnoepf${i}`))
+    if(klappeKnoepf[i] == null){
+        klappeKnoepf.pop()
+        break
+    }
 }
 
 const klappeInhalt = []
 for(let i = 0; i < 99; i++){
     klappeInhalt.push(document.getElementById(`klappeInhalt${i}`))
+    if(klappeInhalt[i] == null){
+        klappeInhalt.pop()
+        break
+    }
 }
 
 const imgKlappe = []
 for(let i = 0; i < 99; i++){
     imgKlappe.push(document.getElementById(`imgKlappe${i}`))
+    if(imgKlappe[i] == null){
+        imgKlappe.pop()
+        break
+    }
 }
 
 var zustandKlappe = []
-for(let i = 0; i < 99; i++){
+for(let i = 0; i < klappeKnoepf.length; i++){
     zustandKlappe.push("ausklappen")
 }
 

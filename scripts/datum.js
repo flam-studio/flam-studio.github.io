@@ -1,12 +1,57 @@
 const date = new Date()
-const fabianZiemsDatum1 = new Date("2026-07-25")
 
-const fabianZiemsTextDatum1 = document.getElementById("fabianZiemsTextDatum1")
+const textDatum = []
+for(let i = 0; i < 99; i++){
+    textDatum.push(document.getElementById(`textDatum${i}`))
+    if(textDatum[i] == null){
+        textDatum.pop()
+        break
+    }
+}
+
+var index
+
+const kuenstlerDatum = [
+    {
+        box: document.getElementById("fabianZiemsDatumBox"),
+        datum:
+        [
+            new Date("2026-07-25"),
+        ]
+    },
+    {
+        box: document.getElementById("bjarneDatumBox"),
+        datum:
+        [
+        ]
+    },
+]
+
+for(let i = 0; i < kuenstlerDatum.length; i++){
+    if(kuenstlerDatum[i].box != null){
+        index = i
+        break
+    }
+}
 
 export function setDatum(){
-    try{
-        fabianZiemsTextDatum1.appendChild(calcDatum(fabianZiemsDatum1))
-    }catch{}
+    if(index != null){
+        try{
+            for(let i = 0; i < kuenstlerDatum[index].datum.length; i++){
+                var node = calcDatum(kuenstlerDatum[index].datum[i])
+                if(node == null){
+                    textDatum[i].remove()
+                }
+                else{
+                    textDatum[i].appendChild(node)
+                }
+            }
+        }catch{}
+        if(kuenstlerDatum[index].box.childElementCount == 0){
+            kuenstlerDatum[index].box.appendChild(document.createTextNode("Zurzeit sind keine Auftritte angekündigt"))
+        }
+    }
+
 }
 function calcDatum(datum){
     var d = datum.getTime() - date.getTime()
@@ -78,6 +123,6 @@ function calcDatum(datum){
                 }
             }
         }
-        return span
+        return null
     }
 }
