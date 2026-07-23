@@ -47,7 +47,7 @@
 
 /*Bjarne*/
 #BjarneWerdegangBild0{
-  background: url("../media/kuentler/Bjarne/tvk-bild.jpg") 25% 25%
+  background: url("../media/kuentler/Bjarne/tvk-bild.avif") 25% 25%
     no-repeat;
   background-size: cover;
 }
@@ -57,12 +57,12 @@
   background-size: cover;
 }
 #BjarneWerdegangBild2{
-  background: url("../media/kuentler/Bjarne/jesc-bild.jpg") 25% 25%
+  background: url("../media/kuentler/Bjarne/jesc-bild.avif") 25% 25%
     no-repeat;
   background-size: cover;
 }
 #BjarneWerdegangBild3{
-  background: url("../media/kuentler/Bjarne/herz-fuer-kinder-bild.jpg")
+  background: url("../media/kuentler/Bjarne/herz-fuer-kinder-bild.avif")
     no-repeat;
   background-size: cover;
 }
@@ -72,12 +72,12 @@
   background-size: cover;
 }
 #BjarneWerdegangBild5{
-  background: url("../media/kuentler/Bjarne/tonies-bild.jpg") 50% 50%
+  background: url("../media/kuentler/Bjarne/tonies-bild.avif") 50% 50%
     no-repeat;
   background-size: cover;
 }
 #BjarneWerdegangBild6{
-  background: url("../media/kuentler/Bjarne/lucas-traumfabrik-bild.jpg") 35% 35%
+  background: url("../media/kuentler/Bjarne/lucas-traumfabrik-bild.avif")
     no-repeat;
   background-size: cover;
 }

@@ -150,8 +150,8 @@ footer p{
     align-items: flex-start;
 }
 .content div > span{
-    width: 43%;
-    height: 28vh;
+    width: 42%;
+    height: min(28vh, 22vw);
     margin: 1%;
     padding: 10px;
     border: 1px var(--out) solid;
@@ -171,7 +171,7 @@ footer p{
     margin-top: 2%;
 }
 .content span{
-    padding-left: 2.5%;
+    padding-left: 3.5%;
     display: block;
 }
 .leistungEntwicklung{
@@ -449,14 +449,16 @@ footer p{
   }
 }
 
-.werdegang{
+#werdegang{
     display: block;
     margin-top: 20px;
+    width: 100%;
+    display: block;
 }
-.werdegang *, .werdegang ::before, .werdegang ::after{
+#werdegang *, #werdegang ::before, #werdegang ::after{
   box-sizing: border-box;
 }
-.werdegang p{
+#werdegang p{
   margin-top: 0px;
 }
 .werdegangLinie {
@@ -583,10 +585,14 @@ footer p{
   transition: max-height 0.4s linear;
 }
 .klappeInhalt.offen{
-  max-height: 100vh
+  max-height: 100vh;
 }
 .klappeText{
   padding: .5rem;
+  display: none;
+}
+.klappeInhalt.offen .klappeText{
+    display: block;
 }
 
 @media screen and (max-width: 800px){
