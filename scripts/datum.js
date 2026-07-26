@@ -51,7 +51,7 @@ for(let i = 0; i < kuenstlerDatum.length; i++){
 
 export function setDatum(){
     if(index != null){
-        if(sprache = 0){
+        if(sprache == 0){
             try{
                 for(let i = 0; i < kuenstlerDatum[index].datum.length; i++){
                     var node = calcDatumDe(kuenstlerDatum[index].datum[i])
@@ -64,7 +64,9 @@ export function setDatum(){
                 }
             }catch{}
             if(kuenstlerDatum[index].box[sprache].childElementCount == 0){
-                kuenstlerDatum[index].box[sprache].appendChild(document.createTextNode("Zurzeit sind keine Auftritte angekündigt"))
+                node = document.createElement("p")
+                node.textContent = "Zurzeit sind keine Auftritte angekündigt"
+                kuenstlerDatum[index].box[sprache].appendChild(node)
             }
         }
         else{
@@ -80,7 +82,9 @@ export function setDatum(){
                 }
             }catch{}
             if(kuenstlerDatum[index].box[sprache].childElementCount == 0){
-                kuenstlerDatum[index].box[sprache].appendChild(document.createTextNode("No performances have been announced at this time"))
+                node = document.createElement("p")
+                node.textContent = "No performances have been announced at this time"
+                kuenstlerDatum[index].box[sprache].appendChild(node)
             } 
         }
     }
