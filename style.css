@@ -376,6 +376,15 @@ footer p{
     justify-content: space-between;
     align-items: center;
 }
+.contentScrollBox.datum > p{
+    overflow: unset;
+    white-space: normal;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break:break-all;
+    word-break:normal;
+    hyphens: auto;
+}
 .contentScrollBox > a > span{
     display: flex;
     flex-direction: column;
