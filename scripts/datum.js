@@ -34,6 +34,16 @@ const kuenstlerDatum = [
         [
         ]
     },
+    {
+        box:
+        [
+            document.getElementById("timDatumBoxDe"),
+            document.getElementById("timDatumBoxEn")
+        ],
+        datum:
+        [
+        ]
+    }
 ]
 
 for(let i = 0; i < kuenstlerDatum.length; i++){

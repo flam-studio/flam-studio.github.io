@@ -81,3 +81,30 @@
     no-repeat;
   background-size: cover;
 }
+
+/*TiM*/
+#TiMWerdegangBild0{
+  background: url("../media/kuentler/TiM/sweather-weather-chill-bild.avif") 30% 30%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild1{
+  background: url("../media/kuentler/TiM/so-allone-bild.jpg") 75% 75%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild2{
+  background: url("../media/kuentler/TiM/tvk-2025-bild.avif") 15% 15%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild3{
+  background: url("../media/kuentler/TiM/nie-wieder-bild.jpg") 70% 70%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild4{
+  background: url("../media/kuentler/TiM/tvk-2026-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
