@@ -108,3 +108,30 @@
     no-repeat;
   background-size: cover;
 }
+
+/*[Adriano Kaya]*/
+#AdrianoKayaWerdegangBild0 {
+  background: url("../media/kuentler/Adriano-Kaya/tvk-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+#AdrianoKayaWerdegangBild1 {
+  background: url("../media/kuentler/Adriano-Kaya/giovanni-zarrella-bild.jpg") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+#AdrianoKayaWerdegangBild2 {
+  background: url("../media/kuentler/Adriano-Kaya/alle-macht-den-träumen-bild.jpg")
+    no-repeat;
+  background-size: cover;
+}
+#AdrianoKayaWerdegangBild3 {
+  background: url("../media/kuentler/Adriano-Kaya/wie-im-film-bild.jpg") 30% 30%
+    no-repeat;
+  background-size: cover;
+}
+#AdrianoKayaWerdegangBild4 {
+  background: url("../media/kuentler/Adriano-Kaya/be-my-girl-bild.jpeg")
+    no-repeat;
+  background-size: cover;
+}

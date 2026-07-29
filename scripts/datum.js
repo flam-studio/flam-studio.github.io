@@ -32,6 +32,7 @@ const kuenstlerDatum = [
         ],
         datum:
         [
+            //hier new Date("jahr-monat-tag"), einfügen
         ]
     },
     {
@@ -42,8 +43,20 @@ const kuenstlerDatum = [
         ],
         datum:
         [
+            //hier new Date("jahr-monat-tag"), einfügen
         ]
-    }
+    },
+    {
+        box:
+        [
+            document.getElementById("adrianoKayaDatumBoxDe"),
+            document.getElementById("adrianoKayaDatumBoxEn")
+        ],
+        datum:
+        [
+            //hier new Date("jahr-monat-tag"), einfügen
+        ]
+    },
 ]
 
 for(let i = 0; i < kuenstlerDatum.length; i++){
