@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../../media/logo.jpeg">
+        <title>Flam.Studio</title>
+        <link href="../../style.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../kuenstler/werdegang.css">
+        <script src="../../scripts/main.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <bUtton id="sideBarButton" class="none" onclick="ausklappen()">
+                |||
+            </bUtton>
+            <a href="../../en.html">
+                <img id="logoNav" src="" alt="Flam.Studio">
+            </a>
+            <span id="linksNav">
+                <a href="../artists.html">Artists</a>
+                <a href="../services.html">Services</a>
+                <a href="../about-us.html">About Us</a>
+                <a href="../contact.html">Contact</a>
+            </span>
+            <span id="settingsNav">
+                <button id="setDe" class="buttonNav">
+                    <a href="../../kuenstler/adriano-kaya.html">
+                        De
+                    </a>
+                </button>
+                <button id="setMode" class="buttonNav" onclick="setDark()">
+                    <img src="" alt="Change Color Thema" id="modeImg">
+                </button>
+            </span>
+        </header>
+        <main>
+            <div id="menu" class="none">
+                <a href="../artists.html">Artists</a>
+                <a href="../services.html">Services</a>
+                <a href="../about-us.html">About Us</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+            <div class="content kuenstler">
+                <img src="../../media/kuentler/Adriano-Kaya/profilbild.jpeg" alt="">
+                <h2>
+                    Adriano Kaya
+                </h2>
+                <p>
+                    Singer
+                </p>
+                <span id="kontaktLinks">
+                    <a href="mailto:adriano-kaya@flam-studio.de">
+                        <img src="" alt="Email" id="imgMail">
+                    </a>
+                    <a href="https://www.instagram.com/adrianokaya_/" target="_blank">
+                        <img src="" alt="Instagram" id="imgInstagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@adr1anokaya" target="_blank">
+                        <img src="" alt="Tiktok" id="imgTiktok">
+                    </a>
+                    <a href="https://www.youtube.com/@adrianokaya" target="_blank">
+                        <img src="" alt="Youtube" id="imgYoutube">
+                    </a>
+                    <a href="https://www.facebook.com/AdrianoKayaMusic/" target="_blank">
+                        <img src="" alt="Facebook" id="imgFacebook">
+                    </a>
+                </span>
+                <p>
+                    [ueber-mich-text]
+                </p>
+                <h2>
+                    Performances
+                </h2>
+                <div class="contentScrollBox datum" id="adrianoKayaDatumBoxEn">
+
+                </div>
+                <h2>
+                    Songs
+                </h2>
+                <div class="contentScrollBox">
+                    <a href="https://open.spotify.com/intl-de/track/2o9USnFKZRu7bRXzRAyDup" target="_blank">
+                        <img src="" alt="Play" id="musikPlay0">
+                        Be My Girl
+                    </a>
+                    <a href="https://open.spotify.com/intl-de/album/4YuGUfhYxvHxioUux8cwTO" target="_blank">
+                        <img src="" alt="Play" id="musikPlay1">
+                        Wie im Film <br>
+                        (Album)
+                    </a>
+                </div>
+                <h2>
+                    Career History
+                </h2>
+                <div id="werdegang">
+                    <div class="werdegangLinie">
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="AdrianoKayaWerdegangBild0">
+                                <p>
+                                    Photo: SAT.1
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf0" onclick="clickKlappe(0)">
+                                        The Voice Kids 2021
+                                        <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe0">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt0" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Adriano first appeared on television as a singer when he competed in the ninth season of the German singing competition show “The Voice Kids” in 2021. On “The Voice Kids,” Adriano made it from the blind auditions through the battles all the way to the sing-offs.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt rechts">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="AdrianoKayaWerdegangBild1">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf1" onclick="clickKlappe(1)">
+                                        Die Giovanni Zarrella Show
+                                        <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe1">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt1" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Adriano appeared a total of three times on the ZDF show “Die Giovanni Zarrella Show.” He made his first appearance there in September 2021, where he performed a duet with the Schlager singer on the song “Millionen Träume.” In February 2022, he took the stage with Giovanni Zarrella once again. This time, they sang the song “Die Liebe siegt” together. He was also invited to be part of the show a third time, where he sang his own version of “Alle Macht den Träumen.”
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="AdrianoKayaWerdegangBild2">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf2" onclick="clickKlappe(2)">
+                                        First Release
+                                        <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe2">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt2" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        On November 4, 2022, Adriano`s first song, “Alle Macht den Träumen,” was released on all major streaming platforms. The well-known original song is from the movie “The Neverending Story.”
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt rechts">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="AdrianoKayaWerdegangBild3">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf3" onclick="clickKlappe(3)">
+                                        Debut-Album
+                                        <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe3">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt3" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        On March 31, 2023, Adriano`s cover album “Wie im Film” was released, featuring Adriano`s own renditions of various German film classics such as: “Kann es wirklich Liebe sein” (from Disney`s “The Lion King”), “Probiers mal mit Gemütlichkeit” (from Disney`s “The Jungle Book”), and many others.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="AdrianoKayaWerdegangBild4">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf4" onclick="clickKlappe(4)">
+                                        Debut-Single
+                                        <img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe4">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt4" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        On May 31, 2024, Adriano`s first original song, “Be My Girl,” was released on all major streaming platforms.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>
+                    For autograph requests:
+                </h3>
+                <p>
+                    Please send an envelope with a self-addressed, stamped return envelope and your autograph requests to the following address: <br>
+                    <br>
+                    Adriano Kaya <br>
+                    Annastraße 17 <br>
+                    36179 Bebra
+                </p>
+                <h2>
+                    Press Articles
+                </h2>
+                <div class="contentScrollBox">
+                    <a href="https://www.nrwision.de/mediathek/schlagercouch-adriano-kaya-sunel-schlagersaenger-aus-hessen-250401/" target="_blank">
+                        NRWision
+                    </a>
+                    <a href="https://osthessen-news.de/n11758918/adriano-kaya-sunel-14-singt-in-den-marwah-film-studios-in-neu-delhi.html" target="_blank">
+                        OSTHESSEN NEWS
+                    </a>
+                    <a href="https://www.eurovision.de/videos/2023/Adriano-Be-My-Girl-Auswahl-Junior-ESC-2023,junioresc256.html" target="_blank">
+                        Eurovision
+                    </a>
+                </div>
+            </div>
+            <div id="imgBox">
+                <button id="scrollBoxKnopfCommunity" class="scrollBoxKnopf geschlossen" onclick="clickScrollCommunity()">
+                    <h2>
+                        Photos from the Community
+                    </h2>
+                    <img src="" alt="ein-/ausklappen" id="scrollBoxImgCommunity" onclick="">
+                </button>
+                <div class="scrollBox" id="scrollBoxCommunity">
+                    [aus bilder.html einfügen]
+                </div>
+                <button id="scrollBoxKnopfPresse" class="scrollBoxKnopf geschlossen" onclick="clickScrollPresse()">
+                    <h2>
+                        Press Photos
+                    </h2>
+                    <img src="" alt="ein-/ausklappen" id="scrollBoxImgPresse">
+                </button>
+                <div class="scrollBox" id="scrollBoxPresse">
+                    <img src="../media/kuentler/Adriano-Kaya/profilbild.jpeg" alt="">
+                    <img src="../media/kuentler/Adriano-Kaya/alle-macht-den-träumen-bild.jpg" alt="">
+                    <img src="../media/kuentler/Adriano-Kaya/wie-im-film-bild.jpg" alt="">
+                    <img src="../media/kuentler/Adriano-Kaya/be-my-girl-bild.jpeg" alt="">
+                    <img src="../media/kuentler/Adriano-Kaya/pressebild1.jpg" alt="">
+                    <img src="../media/kuentler/Adriano-Kaya/pressebild2.jpg" alt="">
+                    <img src="../media/kuentler/Adriano-Kaya/pressebild3.jpg" alt="">
+                    <img src="../media/kuentler/Adriano-Kaya/pressebild4.jpg" alt="">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span>
+                <h4>
+                    Contact
+                </h4>
+                <a href="mailto:kontakt@flam-studio.de">
+                    Email:
+                </a>
+                <a href="mailto:kontakt@flam-studio.de">
+                    kontakt@flam-studio.de
+                </a>
+            </span>
+            <span>
+                <h4>
+                    Legal Information
+                </h4>
+                <a href="../legal-notice.html">
+                    Legal Notice
+                </a>
+                <a href="../privacy-policy.html">
+                    Privacy Policy
+                </a>
+            </span>
+            <p id="copy">
+                © 2026 Flam.Studio
+            </p>
+        </footer>
+    </body>
+</html>
