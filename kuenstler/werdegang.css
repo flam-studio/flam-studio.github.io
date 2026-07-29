@@ -108,6 +108,11 @@
     no-repeat;
   background-size: cover;
 }
+#TiMWerdegangBild5{
+  background: url("../media/kuentler/TiM/support-acts-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
 
 /*[Adriano Kaya]*/
 #AdrianoKayaWerdegangBild0 {
