@@ -114,7 +114,7 @@
   background-size: cover;
 }
 
-/*[Adriano Kaya]*/
+/*Adriano Kaya*/
 #AdrianoKayaWerdegangBild0 {
   background: url("../media/kuentler/Adriano-Kaya/tvk-bild.avif") 20% 20%
     no-repeat;
@@ -137,6 +137,18 @@
 }
 #AdrianoKayaWerdegangBild4 {
   background: url("../media/kuentler/Adriano-Kaya/be-my-girl-bild.jpeg")
+    no-repeat;
+  background-size: cover;
+}
+
+/*Max*/
+#MaxWerdegangBild0 {
+  background: url("../media/kuentler/Max/tvk-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+#MaxWerdegangBild1 {
+  background: url("../media/kuentler/Max/home-alone-bild.jpg") 10% 10%
     no-repeat;
   background-size: cover;
 }

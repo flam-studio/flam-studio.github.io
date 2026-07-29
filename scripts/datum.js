@@ -32,7 +32,7 @@ const kuenstlerDatum = [
         ],
         datum:
         [
-            //hier new Date("jahr-monat-tag"), einfügen
+            //ggf. hier new Date("jahr-monat-tag"), einfügen
         ]
     },
     {
@@ -43,7 +43,7 @@ const kuenstlerDatum = [
         ],
         datum:
         [
-            //hier new Date("jahr-monat-tag"), einfügen
+            //ggf. hier new Date("jahr-monat-tag"), einfügen
         ]
     },
     {
@@ -54,7 +54,18 @@ const kuenstlerDatum = [
         ],
         datum:
         [
-            //hier new Date("jahr-monat-tag"), einfügen
+            //ggf. hier new Date("jahr-monat-tag"), einfügen
+        ]
+    },
+        {
+        box:
+        [
+            document.getElementById("[kuenstler-name]DatumBoxDe"),
+            document.getElementById("[kuenstler-name]DatumBoxEn")
+        ],
+        datum:
+        [
+            //ggf. hier new Date("jahr-monat-tag"), einfügen
         ]
     },
 ]

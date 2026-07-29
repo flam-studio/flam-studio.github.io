@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="lu1710">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../media/logo.jpeg">
+        <title>Flam.Studio</title>
+        <link href="../style.css" rel="stylesheet">
+        <link rel="stylesheet" href="./werdegang.css">
+        <script src="../scripts/main.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <bUtton id="sideBarButton" class="none" onclick="ausklappen()">
+                |||
+            </bUtton>
+            <a href="/">
+                <img id="logoNav" src="" alt="Flam.Studio">
+            </a>
+            <span id="linksNav">
+                <a href="../kuenstler.html">Künstler</a>
+                <a href="../leistungen.html">Leistungen</a>
+                <a href="../ueber-uns.html">Über uns</a>
+                <a href="../kontakt.html">Kontakt</a>
+            </span>
+            <span id="settingsNav">
+                <button id="setEn" class="buttonNav">
+                    <a href="../en/artists/max.html">
+                        En
+                    </a>
+                </button>
+                <button id="setMode" class="buttonNav" onclick="setDark()">
+                    <img src="" alt="Change Color Thema" id="modeImg">
+                </button>
+            </span>
+        </header>
+        <main>
+            <div id="menu" class="none">
+                <a href="../kuenstler.html">Künstler</a>
+                <a href="../leistungen.html">Leistungen</a>
+                <a href="../ueber-uns.html">Über uns</a>
+                <a href="../kontakt.html">Kontakt</a>
+            </div>
+            <div class="content kuenstler">
+                <img src="../media/kuentler/Max/profilbild.jpeg" alt="">
+                <h2>
+                    Max
+                </h2>
+                <p>
+                    Sänger
+                </p>
+                <span id="kontaktLinks">
+                    <a href="mailto:max@flam-studio.de">
+                        <img src="" alt="Email" id="imgMail">
+                    </a>
+                    <a href="https://www.instagram.com/max_of_roses/" target="_blank">
+                        <img src="" alt="Instagram" id="imgInstagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@max_of_roses_official" target="_blank">
+                        <img src="" alt="Tiktok" id="imgTiktok">
+                    </a>
+                </span>
+                <p>
+                    [ueber-mich-text]
+                </p>
+                <h2>
+                    Auftritte
+                </h2>
+                <div class="contentScrollBox datum" id="maxDatumBoxDe">
+                    
+                </div>
+                <h2>
+                    Songs/Alben
+                </h2>
+                <div class="contentScrollBox">
+                    <a href="https://open.spotify.com/intl-de/album/4KuU3vAuGMZclhNhqu082H" target="_blank">
+                        <img src="" alt="Play" id="musikPlay2">
+                        Home Alone <br>
+                        (Album)
+                    </a>
+                    <a href="https://open.spotify.com/intl-de/album/0d7nMho5CQd3FzObFjWceF" target="_blank">
+                        <img src="" alt="Play" id="musikPlay1">
+                        Rock & Roll Queen
+                    </a>
+                    <a href="https://open.spotify.com/intl-de/album/6dTOHRlTMske74wNRd4CyA" target="_blank">
+                        <img src="" alt="Play" id="musikPlay0">
+                        Bed of Roses
+                    </a>
+                </div>
+                <h2>
+                    Werdegang
+                </h2>
+                <div id="werdegang">
+                    <div class="werdegangLinie">
+                        <div class="werdegangAbschnitt links">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="MaxWerdegangBild0">
+                                <p>
+                                    Foto: Joyn/Claudius Pflug
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf0" onclick="clickKlappe(0)">
+                                    	The Voice Kids
+                                    	<img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe0">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt0" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Max trat erstmals als Sänger im Fernsehen auf, als er im Jahr 2025 an der 13. Staffel der deutschen Gesangs-Carstingshow „The Voice Kids“ Teilnahm. Bei The Voice Kids kam Bjarne von den Blind Auditions bis in die Knockouts. 
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="werdegangAbschnitt rechts">
+                        <div class="werdegangPunkt">
+                            <div class="werdegangBild" id="MaxWerdegangBild1">
+                                <p>
+                                </p>
+                            </div>
+                            <div>
+                            <div class="klappe">
+                                <div>
+                                <p class="klappeoeffner">
+                                    <button class="klappeKnopf geschlossen" id="klappeKnoepf1" onclick="clickKlappe(1)">
+                                    	Debut-Album
+                                    	<img src="" alt="ein-/ausklappen" class="imgKlappe" id="imgKlappe1">
+                                    </button>
+                                </p>
+                                <div id="klappeInhalt1" class="klappeInhalt">
+                                    <div>
+                                    <p class="klappeText">
+                                        Am 06.03.2026 erschien Max`s Debüt-Album „Home Alone (Acousic)". Auf diesem präsentiert er nur mit seiner Gitarre bekannte Songs wie „Beautiful Things“, „Creep“ und vielen mehr.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>
+                    Presseartikel
+                </h2>
+                <div class="contentScrollBox">
+                    <a href="https://www.westfalen-blatt.de/owl/bielefeld/the-voice-kids-bielefeld-sat-1-joyn-3245832?pid=true&ueg=default" target="_blank">
+                        Westfalen Blatt
+                    </a>
+                </div>
+            </div>
+            <div id="imgBox">
+                <button id="scrollBoxKnopfCommunity" class="scrollBoxKnopf geschlossen" onclick="clickScrollCommunity()">
+                    <h2>
+                        Fotos aus der Community
+                    </h2>
+                    <img src="" alt="ein-/ausklappen" id="scrollBoxImgCommunity" onclick="">
+                </button>
+                <div class="scrollBox" id="scrollBoxCommunity">
+                    [aus bilder.html einfügen]
+                </div>
+                <button id="scrollBoxKnopfPresse" class="scrollBoxKnopf geschlossen" onclick="clickScrollPresse()">
+                    <h2>
+                        Pressebilder
+                    </h2>
+                    <img src="" alt="ein-/ausklappen" id="scrollBoxImgPresse">
+                </button>
+                <div class="scrollBox" id="scrollBoxPresse">
+                    <img src="../media/kuentler/Max/home-alone-bild.jpg" alt="">
+                    <img src="../media/kuentler/Max/pressebild1.jpg" alt="">
+                    <img src="../media/kuentler/Max/pressebild2.jpg" alt="">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span>
+                <h4>
+                    Kontakt
+                </h4>
+                <a href="mailto:kontakt@flam-studio.de">
+                    Email:
+                </a>
+                <a href="mailto:kontakt@flam-studio.de">
+                    kontakt@flam-studio.de
+                </a>
+            </span>
+            <span>
+                <h4>
+                    Rechtliches
+                </h4>
+                <a href="../impressum.html">
+                    Impressum
+                </a>
+                <a href="../datenschutzerklärung.htm">
+                    Datenschutzerklärung
+                </a>
+            </span>
+            <p id="copy">
+                © 2026 Flam.Studio
+            </p>
+        </footer>
+    </body>
+</html>
