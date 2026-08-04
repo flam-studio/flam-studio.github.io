@@ -38,7 +38,7 @@ for(let i = 0; i < kuenstlerDatum.length; i++){
         sprache = 0
         break
     }
-    if(kuenstlerDatum[i].box[1] != null){
+    if(document.getElementById(kuenstlerDatum[i].box[1] != null)){
         box = document.getElementById(kuenstlerDatum[i].box[1])
         for(let j = 0; j < kuenstlerDatum[i].termin.length; j++){
             termin.push(kuenstlerDatum[i].termin[j])
