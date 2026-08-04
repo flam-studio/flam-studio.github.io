@@ -1,0 +1,62 @@
+[
+    {
+        "box": 
+        [
+            "fabianZiemsDatumBoxDe",
+            "fabianZiemsDatumBoxEn"
+        ],
+        "termin":
+        [
+            {
+                "datum": "2026-07-25",
+                "name": "Joy of Voice",
+                "zusatz": "The Greatest Hits",
+                "link": "https://www.eventim-light.com/de/a/6179b30a0395395ac153fb81/e/67ffaa05c09153707b68e28a"
+            }
+        ]
+    },
+    {
+        "box":
+        [
+            "bjarneDatumBoxDe",
+            "bjarneDatumBoxEn"
+        ],
+        "termin":
+        [
+            
+        ]
+    },
+    {
+        "box":
+        [
+            "timDatumBoxDe",
+            "timDatumBoxEn"
+        ],
+        "termin":
+        [
+            
+        ]
+    },
+    {
+        "box":
+        [
+            "adrianoKayaDatumBoxDe",
+            "adrianoKayaDatumBoxEn"
+        ],
+        "termin":
+        [
+            
+        ]
+    },
+        {
+        "box":
+        [
+            "maxDatumBoxDe",
+            "maxDatumBoxEn"
+        ],
+        "termin":
+        [
+            
+        ]
+    }
+]

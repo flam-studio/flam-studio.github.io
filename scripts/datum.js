@@ -9,9 +9,27 @@ for(let i = 0; i < 99; i++){
     }
 }
 
-var index
+var box
+var termin = []
 var sprache
+var kuenstlerDatum
+var node
+var nodeLeft
+var nodeCenter
+var nodeRight
+var p
 
+try {
+    const response = await fetch('/scripts/datum.json')
+    if (!response.ok) {
+        throw new Error(`HTTP-Fehler: ${response.status}`)
+    }
+    kuenstlerDatum = await response.json()
+} catch (error) {
+    console.error("Fehler beim Laden der JSON-Daten:", error.message)
+}
+
+/*
 const kuenstlerDatum = [
     {
         box: 
@@ -21,7 +39,7 @@ const kuenstlerDatum = [
         ],
         datum:
         [
-            new Date("2026-07-25"),
+            new Date("2026-08-25"),
         ]
     },
     {
@@ -69,56 +87,73 @@ const kuenstlerDatum = [
         ]
     },
 ]
+*/
 
 for(let i = 0; i < kuenstlerDatum.length; i++){
-    if(kuenstlerDatum[i].box[0] != null){
-        index = i
+    if(document.getElementById(kuenstlerDatum[i].box[0]) != null){
+        box = document.getElementById(kuenstlerDatum[i].box[0])
+        for(let j = 0; j < kuenstlerDatum[i].termin.length; j++){
+            termin.push(kuenstlerDatum[i].termin[j])
+        }
         sprache = 0
         break
     }
     if(kuenstlerDatum[i].box[1] != null){
-        index = i
+        box = document.getElementById(kuenstlerDatum[i].box[1])
+        for(let j = 0; j < kuenstlerDatum[i].termin.length; j++){
+            termin.push(kuenstlerDatum[i].termin[j])
+        }
         sprache = 1
         break
     }
 }
 
 export function setDatum(){
-    if(index != null){
+    if(box != null){
         if(sprache == 0){
-            try{
-                for(let i = 0; i < kuenstlerDatum[index].datum.length; i++){
-                    var node = calcDatumDe(kuenstlerDatum[index].datum[i])
-                    if(node == null){
-                        textDatum[i].remove()
-                    }
-                    else{
-                        textDatum[i].appendChild(node)
-                    }
+            for(let i = 0; i < termin.length; i++){
+                node = document.createElement("a")
+                node.setAttribute("href", termin[i].link)
+                    
+                node.appendChild(getLeftDe(termin[i].datum))
+                
+                node.appendChild(getCenter(termin[i].name, termin[i].zusatz))
+
+                var datum = calcDatumDe(new Date(termin[i].datum))
+                if(datum == null){
+                    continue
                 }
-            }catch{}
-            if(kuenstlerDatum[index].box[sprache].childElementCount == 0){
+                node.appendChild(datum)
+
+                box.appendChild(node)
+                }
+            if(box.childElementCount == 0){
                 node = document.createElement("p")
                 node.textContent = "Zurzeit sind keine Auftritte angekündigt"
-                kuenstlerDatum[index].box[sprache].appendChild(node)
+                box.appendChild(node)
             }
         }
         else{
-            try{
-                for(let i = 0; i < kuenstlerDatum[index].datum.length; i++){
-                    var node = calcDatumEn(kuenstlerDatum[index].datum[i])
-                    if(node == null){
-                        textDatum[i].remove()
-                    }
-                    else{
-                        textDatum[i].appendChild(node)
-                    }
+            for(let i = 0; i < termin.length; i++){
+                node = document.createElement("a")
+                node.setAttribute("href", termin[i].link)
+                    
+                node.appendChild(getLeftEn(termin[i].datum))
+                
+                node.appendChild(getCenter(termin[i].name, termin[i].zusatz))
+
+                var datum = calcDatumEn(new Date(termin[i].datum))
+                if(datum == null){
+                    continue
                 }
-            }catch{}
-            if(kuenstlerDatum[index].box[sprache].childElementCount == 0){
+                node.appendChild(datum)
+
+                box.appendChild(node)
+                }
+            if(box.childElementCount == 0){
                 node = document.createElement("p")
                 node.textContent = "No performances have been announced at this time"
-                kuenstlerDatum[index].box[sprache].appendChild(node)
+                box.appendChild(node)
             } 
         }
     }
@@ -269,4 +304,88 @@ function calcDatumEn(datum){
         }
         return null
     }
+}
+
+function getLeftDe(text){
+    var span = document.createElement("span")
+    var textTeile = text.split("-")
+    var monat = document.createElement("p")
+    var tag = document.createElement("p")
+    var jahr = document.createElement("p")
+    const monate = [
+        "Januar",
+        "Februar",
+        "März",
+        "April",
+        "Mai",
+        "Juni",
+        "Juli",
+        "August",
+        "September",
+        "Oktober",
+        "November",
+        "Dezember"
+    ]
+
+    monat.textContent = monate[Number(textTeile[1]) - 1]
+    span.appendChild(monat)
+
+    tag.textContent = textTeile[2]
+    tag.setAttribute("class", "terminTag")
+    span.appendChild(tag)
+
+    jahr.textContent = textTeile[0]
+    span.appendChild(jahr)
+
+    return span
+}
+function getLeftEn(text){
+    var span = document.createElement("span")
+    var textTeile = text.split("-")
+    var monat = document.createElement("p")
+    var tag = document.createElement("p")
+    var jahr = document.createElement("p")
+    const monate = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ]
+
+    monat.textContent = monate[Number(textTeile[1]) - 1]
+    span.appendChild(monat)
+
+    tag.textContent = textTeile[2]
+    tag.setAttribute("class", "terminTag")
+    span.appendChild(tag)
+
+    jahr.textContent = textTeile[0]
+    span.appendChild(jahr)
+
+    return span
+}
+
+function getCenter(name, zusatz){
+    var span = document.createElement("span")
+    span.setAttribute("class", "terminName")
+    var pName = document.createElement("p")
+    var pZusatz = document.createElement("p")
+
+    pName.textContent  = name
+    span.appendChild(pName)
+
+    if(zusatz != null){
+        pZusatz.textContent = zusatz
+        span.appendChild(pZusatz)
+    }
+
+    return span
 }
