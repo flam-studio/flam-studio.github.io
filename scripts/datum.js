@@ -29,66 +29,6 @@ try {
     console.error("Fehler beim Laden der JSON-Daten:", error.message)
 }
 
-/*
-const kuenstlerDatum = [
-    {
-        box: 
-        [
-            document.getElementById("fabianZiemsDatumBoxDe"),
-            document.getElementById("fabianZiemsDatumBoxEn")
-        ],
-        datum:
-        [
-            new Date("2026-08-25"),
-        ]
-    },
-    {
-        box:
-        [
-            document.getElementById("bjarneDatumBoxDe"),
-            document.getElementById("bjarneDatumBoxEn")
-        ],
-        datum:
-        [
-            //ggf. hier new Date("jahr-monat-tag"), einfügen
-        ]
-    },
-    {
-        box:
-        [
-            document.getElementById("timDatumBoxDe"),
-            document.getElementById("timDatumBoxEn")
-        ],
-        datum:
-        [
-            //ggf. hier new Date("jahr-monat-tag"), einfügen
-        ]
-    },
-    {
-        box:
-        [
-            document.getElementById("adrianoKayaDatumBoxDe"),
-            document.getElementById("adrianoKayaDatumBoxEn")
-        ],
-        datum:
-        [
-            //ggf. hier new Date("jahr-monat-tag"), einfügen
-        ]
-    },
-        {
-        box:
-        [
-            document.getElementById("[kuenstler-name]DatumBoxDe"),
-            document.getElementById("[kuenstler-name]DatumBoxEn")
-        ],
-        datum:
-        [
-            //ggf. hier new Date("jahr-monat-tag"), einfügen
-        ]
-    },
-]
-*/
-
 for(let i = 0; i < kuenstlerDatum.length; i++){
     if(document.getElementById(kuenstlerDatum[i].box[0]) != null){
         box = document.getElementById(kuenstlerDatum[i].box[0])
