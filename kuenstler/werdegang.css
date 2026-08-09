@@ -152,3 +152,27 @@
     no-repeat;
   background-size: cover;
 }
+
+/*PHIL*/
+#PhilSchallerWerdegangBild0 {
+  background: url("../media/kuentler/Phil-Schaller/tvk.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#PhilSchallerWerdegangBild1 {
+  background: url("../media/kuentler/Phil-Schaller/schlagerkids.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}#PhilSchallerWerdegangBild2 {
+  background: url("../media/kuentler/Phil-Schaller/charity.jpg") 30% 30%
+    no-repeat;
+  background-size: cover;
+}#PhilSchallerWerdegangBild3 {
+  background: url("../media/kuentler/Phil-Schaller/debut-single.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}#PhilSchallerWerdegangBild4 {
+  background: url("../media/kuentler/Phil-Schaller/debut-ep.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
