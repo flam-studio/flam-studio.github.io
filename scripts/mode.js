@@ -9,12 +9,14 @@ const outLight = rs.getPropertyValue('--outLight')
 const highLight = rs.getPropertyValue('--highLight')
 const textLight = rs.getPropertyValue('--textLight')
 const headLight = rs.getPropertyValue('--headLight')
+const contrastLight = rs.getPropertyValue('--contrastLight')
 
 const backDark = rs.getPropertyValue('--backDark')
 const outDark = rs.getPropertyValue('--outDark')
 const highDark = rs.getPropertyValue('--highDark')
 const textDark = rs.getPropertyValue('--textDark')
 const headDark = rs.getPropertyValue('--headDark')
+const contrastDark = rs.getPropertyValue('--contrastDark')
 
 const setMode = document.getElementById('setMode')
 const modeImg = document.getElementById('modeImg')
@@ -63,6 +65,7 @@ export function setLight(){
     r.style.setProperty('--high', highLight)
     r.style.setProperty('--text', textLight)
     r.style.setProperty('--head', headLight)
+    r.style.setProperty('--contrast', contrastLight)
 
     logoNav.src = '../media/LogoLight.svg'
 
@@ -99,6 +102,7 @@ export function setDark(){
     r.style.setProperty('--high', highDark)
     r.style.setProperty('--text', textDark)
     r.style.setProperty('--head', headDark)
+    r.style.setProperty('contrast', contrastDark)
 
     logoNav.src = '../media/LogoDark.svg'
 

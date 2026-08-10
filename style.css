@@ -4,18 +4,21 @@
     --highLight: #96B979;
     --textLight: #121d12;
     --headLight: #F2FFF0;
+    --contrastLight: #000000;
 
     --backDark: #070D07;
     --outDark: #203225;
     --highDark: #96B979;
     --textDark: #EBFFF0;
     --headDark: #070F07;
+    --contrastDark: #FFFFFF;
 
     --back: #000000;
     --out: #000000;
     --high: #000000;
     --text: #FFFFFF;
     --head: #000000;
+    --contrast: #FFFFFF;
 
     --footerHight: 120px;
 }
@@ -29,13 +32,13 @@
     font-stretch: 75% 125%;
 }
 p{
-    font-size: 1.4vw;
+    font-size: min(1.4vw, 20px);
 }
 b{
-    font-size: 1.2vw;
+    font-size: min(1.2vw, 17px);
 }
 a{
-    font-size: 1.4vw;
+    font-size: min(1.4vw, 25px);
 }
 
 
@@ -76,6 +79,11 @@ header{
 #linksNav a{
     text-decoration: none;
 }
+#linksNav a:hover{
+    color: var(--contrast);
+    text-shadow: 2px 2px 20px var(--high);
+    zoom: 1.01;
+}
 #settingsNav{
     display: flex;
     width: 190px;
@@ -96,6 +104,11 @@ header{
     text-decoration: none;
     cursor: pointer;
 }
+.buttonNav a:hover, .buttonNav img:hover{
+    border-color: var(--high);
+    box-shadow: 0px 1px 6px 1px var(--high);
+}
+
 #setEn a, #setDe a{
     font-size: small;
 }
@@ -151,9 +164,9 @@ footer p{
 }
 .content div > span{
     width: 42%;
-    height: min(28vh, 22vw);
+    height: min(calc(200 / (20.7vw / (0.62 * 1.4vw)) * (1.19 * 1.4vw) + 50 / (20.7vw / 12px) * 24.3px + 20px), calc(200 / (20.7vw / (0.62 * 20px)) * (1.19 * 20px) + 50 / (20.7vw / 12px) * 24.3px + 20px));
     margin: 1%;
-    padding: 10px;
+    padding: 1%;
     border: 1px var(--out) solid;
     background-color: var(--head);
     border-radius: 5px;
@@ -166,6 +179,7 @@ footer p{
     word-break:normal;
     hyphens: auto;
     text-align: left;
+    margin-top: 0px;
 }
 .content div span h3{
     margin-top: 2%;
@@ -203,7 +217,7 @@ footer p{
     background-size: 25%;
 }
 #leistungKommunikation{
-    width: 91%;
+    width: 88%;
 }
 #imgSpan img{
     width: 50%;
@@ -250,6 +264,11 @@ footer p{
 }
 #linkLeistungen a img, #linkKontakt a img{
     width: 150%;
+    border-radius: 50%;
+}
+#linkLeistungen a img:hover, #linkKontakt a img:hover{
+    zoom: 1.02;
+    box-shadow: 0px 1px 6px 1px var(--high);
 }
 .linkLeistungen{
     background:url('./media/index/leistungen.avif') ;
@@ -286,6 +305,9 @@ footer p{
     background-color: var(--head);
     margin-bottom: 20px;
 }
+#kontaktLinks a:hover{
+    box-shadow: 2px 1px 10px 1px var(--high);
+}
 #kontaktLinks a img{
     width: 10%;
     margin-bottom: 10px;
@@ -304,6 +326,9 @@ footer p{
 }
 #menu a{
     margin  : 7px;
+}
+#menu a:hover{
+    text-shadow: 2px 4px 5px var(--high);
 }
 
 
@@ -655,6 +680,12 @@ footer p{
         flex-direction: column;
     }
     .content>div > span{
+        width: 90%;
+        height: auto;
+        background-size: 25%;
+    }
+
+    .content>div > span#leistungKommunikation{
         width: 90%;
         height: auto;
         background-size: 25%;
