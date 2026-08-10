@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /media/
+Disallow: /en/media/
+Disallow: /scripts/
+
+Sitemap: https://flam-studio.de/sitemap.xml
