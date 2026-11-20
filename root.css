@@ -1,0 +1,24 @@
+:root{
+    --backLight: #eeeeee;
+    --outLight: #7C8C80;
+    --highLight: #96B979;
+    --textLight: #121d12;
+    --headLight: #F2FFF0;
+    --contrastLight: #000000;
+
+    --backDark: #070D07;
+    --outDark: #203225;
+    --highDark: #96B979;
+    --textDark: #EBFFF0;
+    --headDark: #070F07;
+    --contrastDark: #FFFFFF;
+
+    --back: #000000;
+    --out: #000000;
+    --high: #000000;
+    --text: #FFFFFF;
+    --head: #000000;
+    --contrast: #FFFFFF;
+
+    --footerHight: 120px;
+}

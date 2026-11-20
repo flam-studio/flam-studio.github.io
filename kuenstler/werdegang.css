@@ -1,0 +1,178 @@
+/*Default Artis*/
+#defaultWerdegangBild1 {
+  background: url("../media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#defaultWerdegangBild2 {
+  background: url("../media/kuentler/defaultBild.jpg") 25% 25% no-repeat;
+  background-size: cover;
+}
+#defaultWerdegangBild3 {
+  background: url("../media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#defaultWerdegangBild4 {
+  background: url("../media/kuentler/defaultBild.jpg") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+
+/*Fabian Ziems*/
+#FabianZiemsWerdegangBild0 {
+  background: url("../media/kuentler/Fabian-Ziems/film-bild.avif") 25% 25%
+    no-repeat;
+  background-size: cover;
+}
+#FabianZiemsWerdegangBild1 {
+  background: url("../media/kuentler/Fabian-Ziems/theater-bild.avif") 25% 25% no-repeat;
+  background-size: cover;
+}
+#FabianZiemsWerdegangBild2 {
+  background: url("../media/kuentler/Fabian-Ziems/joy-of-voice-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+#FabianZiemsWerdegangBild3 {
+  background: url("../media/kuentler/Fabian-Ziems/tvk-bild.avif") 25% 25%
+    no-repeat;
+  background-size: cover;
+}
+#FabianZiemsWerdegangBild4 {
+  background: url("../media/kuentler/Fabian-Ziems/alles-anders-bild.jpeg") 45% 45%
+    no-repeat;
+  background-size: cover;
+}
+
+/*Bjarne*/
+#BjarneWerdegangBild0{
+  background: url("../media/kuentler/Bjarne/tvk-bild.avif") 25% 25%
+    no-repeat;
+  background-size: cover;
+}
+#BjarneWerdegangBild1{
+  background: url("../media/kuentler/Bjarne/save-the-best-for-us-bild.jpg")
+    no-repeat;
+  background-size: cover;
+}
+#BjarneWerdegangBild2{
+  background: url("../media/kuentler/Bjarne/jesc-bild.avif") 25% 25%
+    no-repeat;
+  background-size: cover;
+}
+#BjarneWerdegangBild3{
+  background: url("../media/kuentler/Bjarne/herz-fuer-kinder-bild.avif")
+    no-repeat;
+  background-size: cover;
+}
+#BjarneWerdegangBild4{
+  background: url("../media/kuentler/Bjarne/tears-of-joy-bild.jpg") 42% 42%
+    no-repeat;
+  background-size: cover;
+}
+#BjarneWerdegangBild5{
+  background: url("../media/kuentler/Bjarne/tonies-bild.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#BjarneWerdegangBild6{
+  background: url("../media/kuentler/Bjarne/lucas-traumfabrik-bild.avif")
+    no-repeat;
+  background-size: cover;
+}
+
+/*TiM*/
+#TiMWerdegangBild0{
+  background: url("../media/kuentler/TiM/sweather-weather-chill-bild.avif") 30% 30%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild1{
+  background: url("../media/kuentler/TiM/so-allone-bild.jpg") 75% 75%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild2{
+  background: url("../media/kuentler/TiM/tvk-2025-bild.avif") 15% 15%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild3{
+  background: url("../media/kuentler/TiM/nie-wieder-bild.jpg") 70% 70%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild4{
+  background: url("../media/kuentler/TiM/tvk-2026-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+#TiMWerdegangBild5{
+  background: url("../media/kuentler/TiM/support-acts-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+
+/*Adriano Kaya*/
+#AdrianoKayaWerdegangBild0 {
+  background: url("../media/kuentler/Adriano-Kaya/tvk-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+#AdrianoKayaWerdegangBild1 {
+  background: url("../media/kuentler/Adriano-Kaya/giovanni-zarrella-bild.jpg") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+#AdrianoKayaWerdegangBild2 {
+  background: url("../media/kuentler/Adriano-Kaya/alle-macht-den-träumen-bild.jpg")
+    no-repeat;
+  background-size: cover;
+}
+#AdrianoKayaWerdegangBild3 {
+  background: url("../media/kuentler/Adriano-Kaya/wie-im-film-bild.jpg") 30% 30%
+    no-repeat;
+  background-size: cover;
+}
+#AdrianoKayaWerdegangBild4 {
+  background: url("../media/kuentler/Adriano-Kaya/be-my-girl-bild.jpeg")
+    no-repeat;
+  background-size: cover;
+}
+
+/*Max*/
+#MaxWerdegangBild0 {
+  background: url("../media/kuentler/Max/tvk-bild.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}
+#MaxWerdegangBild1 {
+  background: url("../media/kuentler/Max/home-alone-bild.jpg") 10% 10%
+    no-repeat;
+  background-size: cover;
+}
+
+/*PHIL*/
+#PhilSchallerWerdegangBild0 {
+  background: url("../media/kuentler/Phil-Schaller/tvk.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
+#PhilSchallerWerdegangBild1 {
+  background: url("../media/kuentler/Phil-Schaller/schlagerkids.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}#PhilSchallerWerdegangBild2 {
+  background: url("../media/kuentler/Phil-Schaller/charity.jpg") 30% 30%
+    no-repeat;
+  background-size: cover;
+}#PhilSchallerWerdegangBild3 {
+  background: url("../media/kuentler/Phil-Schaller/debut-single.avif") 20% 20%
+    no-repeat;
+  background-size: cover;
+}#PhilSchallerWerdegangBild4 {
+  background: url("../media/kuentler/Phil-Schaller/debut-ep.avif") 50% 50%
+    no-repeat;
+  background-size: cover;
+}
